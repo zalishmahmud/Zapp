@@ -24,8 +24,8 @@
                              <label for="area">Area:</label>
                              <select name="area" id="area" value="{{ $house->area }}">
                              @foreach ($areas as $area)
-                             @if ($area->id==1)
-                                 
+                             @if ($area->name==$house->area)
+                             <option selected value={{ $area->name }}>{{ $area->name }}</option>
                              @else
                              <option value={{ $area->name }}>{{ $area->name }}</option>
                              @endif

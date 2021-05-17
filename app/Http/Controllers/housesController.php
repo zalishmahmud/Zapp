@@ -123,7 +123,9 @@ else{
 
 }
 
-
-
+public function houseinfo($id){
+    $house=House::find($id);
+    return $house;
+}
 
 }

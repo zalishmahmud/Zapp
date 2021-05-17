@@ -235,4 +235,10 @@ class PagesController extends Controller
         return view('availableHouses',['houses'=>$houses,'areas'=>$areas,'selectedId'=>$selectedId]);
     }
 
+
+    public function idcheck(){
+        return Auth::id();
+    }
+    
+
 }

@@ -73,4 +73,10 @@ class ReviewController extends Controller
             return redirect()->route('view.house',$house_id);
         }
     }
+
+    public function reviewInfor($id){
+        $review = Review::find($id);
+        return $review;
+
+    }
 }

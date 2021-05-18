@@ -37,6 +37,27 @@ class HouseTest extends TestCase
         $this->assertDatabaseHas('houses', [
             'houseName'=>'testHouse'
         ]);
+        $this->assertDatabaseHas('houses', [
+            'houseDescription'=>'testing'
+        ]);
+        $this->assertDatabaseHas('houses', [
+            'owner_id'=>1
+        ]);
+        $this->assertDatabaseHas('houses', [
+            'housePrice'=>1000
+        ]);
+        $this->assertDatabaseHas('houses', [
+            'area'=>'Banani'
+        ]);
+        
+        $this->assertDatabaseHas('houses', [
+            'bedroom'=>1
+        ]);
+        $this->assertDatabaseHas('houses', [
+            'washroom'=>4
+        ]);
+
+        
      }
 
      public function testDelete(){
